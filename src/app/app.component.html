@@ -1,4 +1,6 @@
-<button (click)="initNewHero()">Create a new Hero</button>
+<mat-card>
+
+<button (click)="initNewHero()" mat-stroked-button color="primary">Create a new Hero</button>
 
 <table >
     <thead>
@@ -16,9 +18,10 @@
        <td>{{hero.firstName}}</td>
        <td>{{hero.lastName}}</td>
        <td>{{hero.place}}</td>
-       <td><button (click)="EditHero(hero)">Edit</button></td>
+       <td><button (click)="EditHero(hero)" mat-stroked-button color="primary" >Edit</button></td>
         </tr>
     </tbody>
   </table>
 
   <app-edit-hero [hero]="heroToEdit" (herosUpdated)="updateHeroList($event)"></app-edit-hero>
+</mat-card>
