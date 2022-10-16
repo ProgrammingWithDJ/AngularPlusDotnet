@@ -2,20 +2,32 @@
     <h2>{{hero.name}}</h2>
 
     <div>
-        Name: 
-        <input [(ngModel)] ="hero.name" placeholder="Name" />   
+        <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+        
+        <input matInput [(ngModel)] ="hero.name" placeholder="Name" />   
+        </mat-form-field>
     </div>
     <div>
-        FirstName: 
-        <input [(ngModel)] ="hero.firstName" placeholder="FirstName" />  
+        <mat-form-field appearance="fill">
+            <mat-label>FirstName</mat-label>
+        
+        <input matInput [(ngModel)] ="hero.firstName" placeholder="FirstName" />   
+        </mat-form-field>
     </div>
     <div>
-        LastName: 
-        <input [(ngModel)] ="hero.lastName" placeholder="lastName" />  
+        <mat-form-field appearance="fill">
+            <mat-label>LastName</mat-label>
+        
+        <input matInput [(ngModel)] ="hero.lastName" placeholder="LastName" />   
+        </mat-form-field> 
     </div>
     <div>
-        Place: 
-        <input [(ngModel)] ="hero.place" placeholder="Place" />  
+        <mat-form-field appearance="fill">
+            <mat-label>Place</mat-label>
+        
+        <input matInput [(ngModel)] ="hero.place" placeholder="Place" />   
+        </mat-form-field>
     </div>
     <button (click)="updateHero(hero)" *ngIf="hero.id" mat-stroked-button color="primary">Update</button>
     <button (click)="deleteHero(hero)" *ngIf="hero.id" mat-stroked-button color="secondary">Delete</button>

@@ -20,6 +20,7 @@ this.heroToEdit= new SuperHero();
   title = 'SuperHero';
   heroes: SuperHero[] =[];
 heroToEdit?:SuperHero;
+columnsToDisplay =['name','firstName','lastName','place','Button']
   constructor(private superHeroService: SuperHeroService) {}
 
   ngOnInit() : void {
